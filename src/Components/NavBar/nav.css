@@ -1,0 +1,10 @@
+.nav-text{
+    font-size: 20px;
+    text-decoration: none;
+    margin-right: 25px;
+    text-align: center;
+    color: black;
+   }
+   .nav-text:hover {
+       color: rgba(50, 153, 50, 0.973);
+   }
