@@ -18,6 +18,8 @@ const NavBar = () => {
                         <Nav className="ms-auto p-2">
                         <NavLink className = 'nav-text' to="/home">Home</NavLink>
 
+                        <NavLink className = 'nav-text' to="/allTour">All Tour Packages</NavLink>
+
                         {user.email &&
                           <NavLink  className = 'nav-text' to="/addservice">Add Package</NavLink>}
 
@@ -37,7 +39,7 @@ const NavBar = () => {
                                 </Link>
                                 :
                                 <Link to="/login">
-                                <button className="btn btn-danger me-2" >Log In</button>
+                                <button className="btn btn-success me-2" >Log In</button>
                                 </Link>
                             }
                         </Nav>

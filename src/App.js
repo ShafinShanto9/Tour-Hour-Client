@@ -1,6 +1,7 @@
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import './App.css';
 import Addservice from './Components/AddService/Addservice';
+import AllTour from './Components/AllTour/AllTour';
 import Booking from './Components/Booking/Booking';
 import Contact from './Components/Contact/Contact';
 import Home from './Components/Home/Home';
@@ -23,6 +24,10 @@ function App() {
 
       <Route exact path ='/home'>
           <Home></Home>
+      </Route>
+
+      <Route exact path ="/allTour">
+        <AllTour></AllTour>
       </Route>
 
       <Route exact path ='/addservice'>
