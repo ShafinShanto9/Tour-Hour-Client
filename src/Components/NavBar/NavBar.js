@@ -8,12 +8,12 @@ const NavBar = () => {
   const {logOut , user} = useAuth()
     return (
         <div>
-          <Navbar  collapseOnSelect expand="lg" bg="light" >
+          <Navbar  collapseOnSelect expand="lg" bg="light">
                     <Container>
                     <Navbar.Brand href="/home">
-                    <span className = "text-success nav-text"> Tour Hour</span>
+                    <span style={{color:"#FFCC05", fontWeight:'bold' , textTransform:"uppercase"}} className = "nav-text"> <i class="fas fa-tree"></i> Tour Hour</span>
                      </Navbar.Brand>
-                    <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+                    <Navbar.Toggle aria-controls="responsive-navbar-nav " />
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="ms-auto p-2">
                         <NavLink className = 'nav-text' to="/home">Home</NavLink>
@@ -39,7 +39,7 @@ const NavBar = () => {
                                 </Link>
                                 :
                                 <Link to="/login">
-                                <button className="btn btn-success me-2" >Log In</button>
+                                <button style={{backgroundColor:'#FFCC05', color:'black', fontWeight:'bold'}} className="btn me-2" >Log In</button>
                                 </Link>
                             }
                         </Nav>

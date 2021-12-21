@@ -18,7 +18,7 @@ const Services = () => {
             {services.length === 0 ? <div  className="d-flex justify-content-center h-100" >
                 <Loader
                 type="Circles"
-                color="green"
+                color="#FFCC05"
                 height={500}
                 width={100}
                

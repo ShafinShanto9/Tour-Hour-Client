@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { Row } from 'react-bootstrap';
-import NavBar from '../NavBar/NavBar';
-import Service from '../Service/Service';
 import Loader from "react-loader-spinner";
 import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
+import NavBar from '../NavBar/NavBar';
+import Service from '../Service/Service';
 
 const AllTour = () => {
     const [tour , setTour] = useState([])
@@ -16,12 +16,12 @@ const AllTour = () => {
         <div>
             <NavBar></NavBar>
           <div style ={{marginTop:"40px"}} className ="container">
-            <h1 className = "text-center mb-4">Our <span className="text-success">Packages</span> </h1>
+            <h1 className = "text-center mb-4">Our <span style={{color:'#FFCC05'}}>Packages</span> </h1>
 
            {tour?.length === 0 ? <div  className="d-flex justify-content-center h-100" >
                 <Loader
                 type="Circles"
-                color="green"
+                color="#FFCC05"
                 height={500}
                 width={100}
                

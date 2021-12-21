@@ -4,7 +4,7 @@ import { Col, Image, Row } from 'react-bootstrap';
 const Clients = () => {
     return (
         <div className = "mt-5 container p-5"> 
-        <h1 className="text-center"> Our <span className = "text-success">Happy</span> Clients</h1>
+        <h1 className="text-center"> Our <span style={{color:'#FFCC05'}}>Happy</span> Clients</h1>
             <Row className = "mt-5">
                 <Col xs = {12} md = {4}>
                     <Image className = "center m"  src = "https://i.ibb.co/Pck127G/3.jpg w-100"></Image>

@@ -18,7 +18,7 @@ const FeaturedPackage = () => {
             {services.length === 0 ? <div  className="d-flex justify-content-center h-100" >
                 <Loader
                 type="Circles"
-                color="green"
+                color="#FFCC05"
                 height={500}
                 width={100}
                
@@ -42,7 +42,7 @@ const FeaturedPackage = () => {
                       <p className="card-text">
                           {(service.description).slice(0,120)}</p>
                           <Link to = {`/service/${service._id}`}>
-                    <button className ="bg-success text-white  p-2 border-0"><i class="fas fa-shopping-basket m-1"></i> Booking Now</button>
+                    <button style={{backgroundColor:"#FFCC05",color:"black"}} className ="p-2 border-0"><i class="fas fa-shopping-basket m-1"></i> Booking Now</button>
                     </Link>
                     </div>
                   </Col>
